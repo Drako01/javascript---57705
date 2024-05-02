@@ -6,3 +6,6 @@ button {
     background-color: black;
     color: antiquewhite;
 }
+
+@import "index.css";
+@import "responsive.css";
