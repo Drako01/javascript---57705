@@ -1,4 +1,4 @@
-### Ejercicios de JavaScript para principiantes
+### Ejercicios de JavaScript nivel Inicial
 
 1. **Consola (Console.log, console.error, etc):**
 
