@@ -34,3 +34,10 @@
 15. Pide al usuario que ingrese un número utilizando `prompt`. Utiliza un bucle `while` para imprimir en la consola los números desde el número ingresado por el usuario hasta el doble de ese número.
 16. Utiliza un bucle `do while` para imprimir en la consola los números impares del 1 al 25.
 
+## Control de Flujo con switch
+
+17. Pide al usuario que ingrese un día de la semana utilizando `prompt`. Utiliza una declaración `switch` para imprimir en la consola si es un día laboral o un día de descanso.
+18. Pide al usuario que ingrese un número del 1 al 7 utilizando `prompt`, donde 1 sea domingo y 7 sea sábado. Utiliza una declaración `switch` para imprimir en la consola el nombre del día de la semana correspondiente al número ingresado por el usuario.
+19. Pide al usuario que ingrese el nombre de un mes utilizando `prompt`. Utiliza una declaración `switch` para imprimir en la consola la cantidad de días que tiene ese mes.
+20. Pide al usuario que ingrese un número del 1 al 12 utilizando `prompt`, donde 1 sea enero y 12 sea diciembre. Utiliza una declaración `switch` para imprimir en la consola el nombre del mes correspondiente al número ingresado por el usuario.
+
