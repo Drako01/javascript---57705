@@ -108,24 +108,29 @@ if(edadIngresada >= 18){ //Condicion correcta para Mayor de edad
 }
 */
 // Ahora lo vamos a resolver usando un Switch
-let edadIngresada = parseInt(prompt("Ingrese su Edad: "));
+let edadIngresada;
 
+do {
+    edadIngresada = prompt("Ingrese su Edad o escriba 'ESC' para salir: ");
 
-switch (edadIngresada) {
-    case 18:
-        console.log("Su edad es de: " + edadIngresada + " Años, entonces es Mayor de Edad");
-        break;
-    case 17:
-        console.log("Su edad es de: " + edadIngresada + " Años, entonces es Menor de Edad");
-        break;
-    case 0:
-        console.log("La Edad ingresada debe ser Mayor a 0 !!");
-        break;
-    default:
-        console.log("La Edad ingresada es Incorrecta!!!")
-        break;
-}
-
+    if (edadIngresada !== "ESC") {
+        edadIngresada = parseInt(edadIngresada); // Convertimos a número entero
+        switch (edadIngresada) {
+            case 18:
+                console.log("Su edad es de: " + edadIngresada + " años, entonces es Mayor de Edad");
+                break;
+            case 17:
+                console.log("Su edad es de: " + edadIngresada + " años, entonces es Menor de Edad");
+                break;
+            case 0:
+                console.log("La Edad ingresada debe ser Mayor a 0 !!");
+                break;
+            default:
+                console.log("La Edad ingresada es Incorrecta!!!")
+                break;
+        }
+    }
+} while (edadIngresada !== "ESC");
 
 // let numero = parseInt(prompt("Ingrese un numero"))
 
