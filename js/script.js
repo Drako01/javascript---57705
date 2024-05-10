@@ -1,147 +1,103 @@
-// let a;
-// a = 0;
-// console.log(a)
-// a = a + 1;
-// console.log(a)
-// a = a + 1;
-// console.log(a)
-// a = a + 1;
-// console.log(a)
-// for(let i = 0;  i < 10;  i = i + 1){
-//     console.log(i + " usando i = i + 1")
-// }
-
-/*
-1er vuelta:
-i = 0
-console.log(i) = 0
-
-2da vuelta:
-i = 1
-console.log(i) = 1
-****
-9na vuelta:
-i = 9
-console.log(i) = 9
+/* Ejercicio 10 - Clase 02
+    Utilizando operadores lógicos, verifica 
+    si un número ingresado por el usuario es divisible tanto por 2 como por 3.
 */
 
-/**
- * i = i + 1 es lo mismo que decir i++
+// let numeroIngresado = parseInt(prompt("Ingrese un numero:"));
+
+// if(numeroIngresado % 2 === 0 && numeroIngresado % 3 === 0){
+//     console.log("El numero " + numeroIngresado + " es divisible por 2 y por 3 a la vez.!");
+// } else {
+//     console.log("El numero " + numeroIngresado + " NO es divisible por 2 y por 3 a la vez.!");
+// }
+
+/* Ejercicio 20 - Clase 02
+ * Pide al usuario que ingrese tres números utilizando prompt, luego verifica si 
+ * la suma de los dos primeros números es igual al tercer número e imprime un mensaje correspondiente.
  */
 
-// for(let i = 1;  i <= 10;  i++){
-//     console.log(i + " usando i++")
-// };
-
-//let ingreseSuNombre = prompt("Ingrese su Nombre");
-
-// Usando break
-// for (let i = 0; i < 15; i++) {
-//     if (i == 5) {        
-//         break;
-//     }
-//     console.log("El nombre ingresado es: " + ingreseSuNombre + " " + i);
-// };
-
-// Usando continue
-// for (let i = 0; i < 10; i++) {
-//     if (i == 5) {        
-//         continue;
-//     }
-//     console.log("El nombre ingresado es: " + ingreseSuNombre + " " + i);
-// };
-
-//let nombre = "Alejandro";
-// console.log(nombre.length);
-// for(let i = 1; i <= nombre.length ; i++){
-//     console.log("Su nombre es: " + nombre + " iteracion Nro: " + i);
+// let numero1 = parseInt(prompt("Ingrese el 1er numero:"));
+// let numero2 = parseInt(prompt("Ingrese el 2do numero:"));
+// let numero3 = parseInt(prompt("Ingrese el 3er numero:"));
+// if(numero1 + numero2 === numero3){
+//     console.log("La suma de los 2 primeros es igual al tercero.! Ambos suman: " + (numero1 + numero2));
+// } else {
+//     console.log("La suma de los 2 primeros NO es igual al tercero.! Ambos suman: " 
+//     + (numero1 + numero2) + ", y Deberia sumar: " + numero3);
 // }
 
-// Ciclo While
-// let i = 0; // Es una Variable Global
-// while(i < 5){
-//     console.log("Imprimiendo desde el While " + i)
-//     i++
-// };
+/**
+ * Ejercicios Adicionales
 
-// Ciclo do While
-// do {
-//     console.log("Imprimiendo desde el do While " + i)
-//     i++
-// } while(i <= 7);
+13. Pide al usuario que ingrese un número utilizando `prompt`, 
+    luego verifica si es un número primo e imprime un mensaje correspondiente.
+ */
 
+// let numeroIngresado = parseInt(prompt("Ingrese un numero para verificar si es o no Primo:"));
+// let esPrimo = true;
 
-// let a = 1; // Formato numerico
-// let b = "1"; // Formato String
-
-// let suma = a + b; // Da como resultado 11
-// console.log(suma); // La operacion + Concatena
-
-// let sumaParceada = parseInt(a) + parseInt(b); // Da como resultado 2
-// console.log(sumaParceada);  // La operacion + Suma
-
-// let ingreseUnNumeroA = prompt("Ingrese el 1er Numero");
-// let ingreseUnNumeroB = prompt("Ingrese el 2do Numero");
-// let resultado = parseInt(ingreseUnNumeroA) + parseInt(ingreseUnNumeroB);
-// let resultadoFloat = parseFloat(ingreseUnNumeroA) + parseFloat(ingreseUnNumeroB);
-// console.log(resultado);
-// console.log(resultadoFloat);
-
-// Switch
-
-/*
- * Muestra un mensaje de alerta que indique si el usuario es 
- * menor de edad o mayor de edad, dependiendo de su 
- * edad ingresada.
-*/
-
-/*let edadIngresada = prompt("Ingrese su Edad: ");
-
-if(edadIngresada >= 18){ //Condicion correcta para Mayor de edad
-    alert("Su edad es de: " + edadIngresada + " Años, entonces es Mayor de Edad");
-} else if (edadIngresada > 0 && edadIngresada < 18){ //La edad tiene que ser mayor a 0 Y menor a 18
-    alert("Su edad es de: " + edadIngresada + " Años, entonces es Menor de Edad");
-} else if(edadIngresada <= 0){ // Para edad Menor o Igual a 0
-    alert("La Edad ingresada debe ser Mayor a 0 !!")
-} else {
-    alert("La Edad ingresada es Incorrecta!!!")
-}
-*/
-// Ahora lo vamos a resolver usando un Switch
-let edadIngresada;
-
-do {
-    edadIngresada = prompt("Ingrese su Edad o escriba 'ESC' para salir: ");
-
-    if (edadIngresada !== "ESC") {
-        edadIngresada = parseInt(edadIngresada); // Convertimos a número entero
-        switch (edadIngresada) {
-            case 18:
-                console.log("Su edad es de: " + edadIngresada + " años, entonces es Mayor de Edad");
-                break;
-            case 17:
-                console.log("Su edad es de: " + edadIngresada + " años, entonces es Menor de Edad");
-                break;
-            case 0:
-                console.log("La Edad ingresada debe ser Mayor a 0 !!");
-                break;
-            default:
-                console.log("La Edad ingresada es Incorrecta!!!")
-                break;
-        }
-    }
-} while (edadIngresada !== "ESC");
-
-// let numero = parseInt(prompt("Ingrese un numero"))
-
-// switch(numero) {
-//     case  1:
-//         console.log("El numero es Uno")
+// for(let i = 2; i < numeroIngresado; i++){
+//     if(numeroIngresado % i === 0){
+//         esPrimo = false;
 //         break;
-//     case  2:
-//         console.log("El numero es Dos")
+//     }
+// }
+
+// if(esPrimo){
+//     console.log("El numero " + numeroIngresado + " es Primo");
+// } else {
+//     console.log("El numero " + numeroIngresado + " NO es Primo");
+// }
+
+
+/** Ejemplo:
+ * Ingreso 4
+ * 
+ * 2 < 4
+ * 4 % 2 === 0?
+ * esPrimo = false
+ * 
+ * ---------------
+ * Ingreso 7
+ * 
+ * 2 < 7
+ * 7 % 2 === 0
+ * esPrimo = true 
+ */
+
+/** Ejercicio 16 - Clase 03
+ * Utiliza un bucle `do while` para imprimir en la consola los números impares del 1 al 25.
+ */
+
+// let numeroParaVerificarQueSeaImpar = 1;
+// do {
+//     if (numeroParaVerificarQueSeaImpar % 2 !== 0) {  // Verifico que no sea Par
+//         console.log(numeroParaVerificarQueSeaImpar); }
+//         numeroParaVerificarQueSeaImpar++;
+// } while (numeroParaVerificarQueSeaImpar <= 25);
+
+
+/** Ejercicio 17 - Clase 03
+ * Pide al usuario que ingrese un día de la semana utilizando `prompt`. Utiliza una declaración 
+ * `switch` para imprimir en la consola si es un día laboral o un día de descanso.
+ */
+
+// let ingreseUnDia = prompt("Ingrese un dia de la semana: ")
+
+// //console.log(ingreseUnDia.toLowerCase())
+// switch(ingreseUnDia.toLowerCase()) { // Sin importar como se ingrese el String, lo convierte a minuscula
+//     case "lunes":
+//     case "martes":
+//     case "miercoles":
+//     case "jueves":
+//     case "viernes":
+//         console.log("Es un dia laboral")
+//         break;
+//     case "sabado":
+//     case "domingo":
+//         console.log("Es un dia de Descanso")
 //         break;
 //     default:
-//         console.log("El numero no es ni Uno ni Dos, es: " + numero)
+//         console.log("Dia invalido.!!")
 //         break;
 // }
