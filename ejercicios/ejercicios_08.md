@@ -1,66 +1,98 @@
-# Ejercicios Integrados de JavaScript
-
-## Conceptos Básicos
-
-1. Crea una variable llamada `nombre` y asígnale tu nombre. Luego, imprime en la consola un saludo utilizando esta variable.
-2. Declara una constante llamada `PI` y asígnale el valor de pi (3.14159). Imprime su valor en la consola.
-3. Escribe una función que reciba un número y devuelva `true` si el número es par, y `false` si es impar. Utiliza operadores lógicos para verificar la paridad.
-4. Usa `prompt` para pedir al usuario su edad. Si la edad es mayor o igual a 18, muestra un mensaje de bienvenida, de lo contrario, muestra un mensaje indicando que el acceso está restringido.
-5. Utiliza un bucle `for` para imprimir los números del 1 al 10 en la consola.
-
-## Funciones y Control de Flujo
-
-6. Escribe una función llamada `esMayorDeEdad` que reciba una edad como parámetro y devuelva `true` si la edad es mayor o igual a 18, y `false` en caso contrario.
-7. Crea una función anónima que calcule el área de un triángulo. Luego, llama a esta función y muestra el resultado en la consola.
-8. Define una función flecha que reciba un nombre y devuelva un saludo personalizado.
-9. Escribe un bucle `while` que sume los números del 1 al 100 y muestre el resultado en la consola.
-10. Usa un bucle `do while` para pedir al usuario un número y repetir el bucle hasta que el número ingresado sea mayor que 10.
-
-## Objetos y Clases
-
-11. Crea un objeto llamado `persona` con las propiedades `nombre`, `edad` y `ciudad`. Imprime en la consola el nombre de la persona.
-12. Define una clase `Animal` con las propiedades `nombre` y `especie`. Agrega un método que imprima un mensaje describiendo al animal.
-13. Utiliza un objeto constructor para crear un objeto `Coche` con las propiedades `marca`, `modelo` y `año`. Imprime el modelo del coche en la consola.
-14. Crea una instancia de la clase `Animal` y llama al método para describir al animal.
-15. Usa el operador `in` para verificar si la propiedad `nombre` existe en el objeto `persona`.
+# Ejercicios de JavaScript
 
 ## Arrays y Métodos de Array
 
-16. Declara un array con tus tres comidas favoritas. Utiliza `forEach` para imprimir cada comida en la consola.
-17. Crea un array de números y usa `map` para crear un nuevo array que contenga cada número multiplicado por 2.
-18. Define una función que reciba un array de números y devuelva el mayor número. Utiliza `reduce` para encontrar el número mayor.
-19. Utiliza el método `filter` para crear un nuevo array que contenga solo los números pares de un array de números.
-20. Usa `find` para buscar un objeto en un array de objetos por una propiedad específica.
+1. **Crear un Array de Números**: Crea un array con los números del 1 al 5 y muéstralo en la consola.
 
-## Funciones de Orden Superior y Math
+2. **Agregar Elemento al Final del Array**: Usa `push` para agregar el número 6 al final del array `numeros`.
 
-21. Escribe una función que reciba otra función y un número, y aplique la función al número. Prueba esta función con una función que calcule el cuadrado de un número.
-22. Utiliza el objeto `Math` para generar un número aleatorio entre 1 y 100. Muestra el número en la consola.
-23. Crea una función que reciba dos fechas y devuelva la diferencia en días entre ellas. Utiliza la clase `Date`.
-24. Define una función que reciba un array de números y una función de comparación, y devuelva el array ordenado utilizando `sort`.
-25. Usa `some` para verificar si al menos un número en un array es mayor que 10.
+3. **Eliminar el Último Elemento del Array**: Usa `pop` para eliminar el último elemento del array `numeros`.
 
-## Operaciones con Objetos y Métodos de Búsqueda
+4. **Agregar Elemento al Inicio del Array**: Usa `unshift` para agregar el número 0 al inicio del array `numeros`.
 
-26. Crea un objeto `Libro` con las propiedades `titulo`, `autor` y `año`. Agrega un método que imprima la información del libro.
-27. Define una clase `Biblioteca` que contenga un array de libros. Agrega métodos para agregar un libro, buscar un libro por título y mostrar todos los libros.
-28. Utiliza `for...in` para iterar sobre las propiedades de un objeto `persona` y mostrar sus valores en la consola.
-29. Crea una función que reciba un array de objetos y un término de búsqueda, y devuelva un array con los objetos que contienen el término en alguna propiedad.
-30. Usa `every` para verificar si todos los números en un array son positivos.
+5. **Eliminar el Primer Elemento del Array**: Usa `shift` para eliminar el primer elemento del array `numeros`.
 
-## Ejercicios Combinados
+## Funciones de Orden Superior
 
-31. Crea una clase `Tienda` que tenga un array de productos. Cada producto debe ser un objeto con las propiedades `nombre`, `precio` y `cantidad`. Agrega métodos para agregar productos, realizar una compra (que disminuya la cantidad) y mostrar el inventario.
-32. Define una clase `Usuario` con las propiedades `nombre`, `email` y `contraseña`. Agrega métodos para registrar un usuario, iniciar sesión (verificando la contraseña) y mostrar la información del usuario.
-33. Utiliza `map`, `filter` y `reduce` en conjunto para transformar, filtrar y resumir datos de un array de números.
-34. Crea una función que reciba un array de objetos `Empleado` y devuelva un array con los nombres de los empleados mayores de 30 años. Utiliza `filter` y `map`.
-35. Define una clase `Carrito` que contenga un array de productos y métodos para agregar productos, quitar productos y calcular el total del carrito.
+6. **Doblar Números**: Usa `map` para crear un nuevo array que contenga cada número del array `numeros` multiplicado por 2.
 
-## Ejercicios Avanzados
+7. **Filtrar Números Pares**: Usa `filter` para crear un nuevo array que contenga solo los números pares del array `numeros`.
 
-36. Crea un objeto `calculadora` con métodos para sumar, restar, multiplicar y dividir. Cada método debe recibir dos números y devolver el resultado de la operación.
+8. **Encontrar el Primer Número Mayor que 3**: Usa `find` para encontrar el primer número mayor que 3 en el array `numeros`.
 
+9. **Verificar si Algún Número es Mayor que 4**: Usa `some` para verificar si algún número en el array `numeros` es mayor que 4.
 
+10. **Multiplicar Todos los Números**: Usa `reduce` para multiplicar todos los números en el array `numeros`.
+
+## Retornar Funciones y Recibir Funciones por Parámetro
+
+11. **Función que Retorna otra Función**: Crea una función que retorne otra función que sume un número dado.
+
+12. **Función que Recibe otra Función como Parámetro**: Crea una función que reciba una función como parámetro y la ejecute con un valor dado.
+
+## Métodos de Búsqueda y Transformación
+
+13. **Buscar Índice de un Número**: Usa `indexOf` para encontrar el índice del número 3 en el array `numeros`.
+
+14. **Verificar la Inclusión de un Número**: Usa `includes` para verificar si el número 4 está en el array `numeros`.
+
+15. **Ordenar Números en Orden Ascendente**: Usa `sort` para ordenar los números del array `numeros` en orden ascendente.
+
+## El Objeto Math
+
+16. **Generar un Número Aleatorio entre 0 y 100**: Usa `Math.random` y `Math.floor` para generar un número aleatorio entre 0 y 100.
+
+17. **Redondear un Número al Entero más Cercano**: Usa `Math.round` para redondear el número 4.7 al entero más cercano.
+
+18. **Encontrar el Máximo de un Conjunto de Números**: Usa `Math.max` para encontrar el máximo de los números 1, 2, 3, 4 y 5.
+
+19. **Encontrar el Mínimo de un Conjunto de Números**: Usa `Math.min` para encontrar el mínimo de los números 1, 2, 3, 4 y 5.
+
+20. **Calcular la Raíz Cuadrada de un Número**: Usa `Math.sqrt` para calcular la raíz cuadrada de 16.
+
+## La Clase Date
+
+21. **Fecha y Hora Actual**: Crea una instancia de `Date` y muestra la fecha y hora actual.
+
+22. **Obtener el Año Actual**: Usa `getFullYear` para obtener el año actual.
+
+23. **Obtener el Mes Actual**: Usa `getMonth` para obtener el mes actual (recuerda que los meses comienzan en 0).
+
+24. **Obtener el Día del Mes Actual**: Usa `getDate` para obtener el día del mes actual.
+
+25. **Obtener el Día de la Semana Actual**: Usa `getDay` para obtener el día de la semana actual (0 es domingo).
+
+## Ejercicios Integradores
+
+26. **Ordenar una Lista de Fechas**: Crea un array de fechas y ordénalas en orden ascendente.
+
+27. **Filtrar Números Mayores que un Valor**: Crea una función que reciba un array y un número, y devuelva un nuevo array con los números mayores que el valor dado.
+
+28. **Calcular el Promedio de un Array de Números**: Crea una función que reciba un array de números y devuelva el promedio.
+
+29. **Agregar Días a una Fecha**: Crea una función que reciba una fecha y un número de días, y devuelva la nueva fecha con los días agregados.
+
+30. **Encontrar Números Duplicados en un Array**: Crea una función que reciba un array y devuelva un nuevo array con los números duplicados.
+
+31. **Transformar Fechas a Formato Legible**: Crea una función que reciba un array de fechas y devuelva un nuevo array con las fechas en formato legible (ej. 'dd/mm/yyyy').
+
+32. **Calcular la Edad a partir de la Fecha de Nacimiento**: Crea una función que reciba una fecha de nacimiento y devuelva la edad.
+
+33. **Sumar los Elementos de un Array de Arrays**: Crea una función que reciba un array de arrays de números y devuelva la suma de todos los elementos.
+
+34. **Encontrar el Mayor y el Menor Número en un Array**: Crea una función que reciba un array de números y devuelva un objeto con el mayor y el menor número.
+
+35. **Contar la Cantidad de Números Pares en un Array**: Crea una función que reciba un array de números y devuelva la cantidad de números pares.
+
+36. **Calcular la Desviación Estándar de un Array de Números**: Crea una función que reciba un array de números y devuelva la desviación estándar.
+
+37. **Ordenar Nombres Alfabéticamente**: Crea una función que reciba un array de nombres y los ordene alfabéticamente.
+
+38. **Agrupar Números por Paridad**: Crea una función que reciba un array de números y devuelva un objeto con dos arrays: uno con los números pares y otro con los impares.
+
+39. **Eliminar Elementos Duplicados en un Array**: Crea una función que reciba un array y devuelva un nuevo array sin elementos duplicados.
+
+40. **Encontrar la Fecha Más Reciente**: Crea una función que reciba un array de fechas y devuelva la fecha más reciente.
 
 
 <p align="center"> 
