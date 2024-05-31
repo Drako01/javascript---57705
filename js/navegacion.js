@@ -18,5 +18,8 @@ cabecera.style.backgroundColor = '#c2c2c2';
 
 const footer = document.getElementsByTagName('footer');
 const parrafoFooter = document.createElement('p');
+const TIME = new Date().getFullYear();
 footer[0].appendChild(parrafoFooter)
-parrafoFooter.innerHTML = 'CoderHouse | Comisión #57705'
+parrafoFooter.innerHTML = 'CoderHouse - ' + TIME + ' | Comisión #57705';
+
+
