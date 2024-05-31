@@ -10,7 +10,7 @@ footer,
 }
 
 footer,
-.navbar nav {
+.navbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,16 +19,31 @@ footer,
 
 .navbar nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.navbar nav ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
 }
 
 .navbar nav ul li a {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     color: black;
+    margin-left: 1rem;
 }
 
 .navbar nav ul li a:hover {
     color: chocolate;
+}
+
+.navbar nav ul li img {
+    height: 3.5rem;
 }
 
 a {
@@ -38,7 +53,6 @@ a {
 li {
     list-style: none;
 }
-
 
 h1 {
     text-align: center;
