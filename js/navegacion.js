@@ -1,16 +1,23 @@
+// Delaración de Variables
 const cabecera = document.getElementById('header');
 const navegacion = document.createElement('div'); 
 const nav = document.createElement('nav');
 const ul = document.createElement('ul');
+const links = ["Index", "Products", "Contact"];
+const liImagen = document.createElement('li');
+const img = document.createElement('img');
+const ORIGEN = document.createElement('a');
+const footer = document.getElementsByTagName('footer');
+const parrafoFooter = document.createElement('p');
+const TIME = new Date().getFullYear();
+
+
 cabecera.appendChild(navegacion);
 navegacion.appendChild(nav);
 nav.appendChild(ul);
 navegacion.className = 'navbar';
 
-const links = ["Index", "Products", "Contact"];
-const liImagen = document.createElement('li');
-const img = document.createElement('img');
-const ORIGEN = document.createElement('a');
+
 ORIGEN.href = '/';
 ORIGEN.appendChild(img);
 img.src = 'img/logo.png';
@@ -27,8 +34,6 @@ for (const link of links) {
 
 cabecera.style.backgroundColor = '#c2c2c2';
 
-const footer = document.getElementsByTagName('footer');
-const parrafoFooter = document.createElement('p');
-const TIME = new Date().getFullYear();
+
 footer[0].appendChild(parrafoFooter);
 parrafoFooter.innerHTML = 'CoderHouse - ' + TIME + ' | Comisión #57705';
