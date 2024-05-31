@@ -25,8 +25,11 @@ Utilizar JavaScript para generar dinámicamente los elementos `<li>` con las im�
 Implementar la funcionalidad para los botones de control que permita cambiar la imagen visible al hacer clic en "anterior" o "siguiente".
 
 <p align="center"> 
-    <a href="https://drako01.github.io/javascript---57705-pruebas/">Ejemplo de como debería quedar</a>
+    <a href="https://drako01.github.io/javascript---57705-pruebas/">Ejemplo de como debería quedar
+
+ <img src="../img/muestra.png" alt="CoderHouse"  height="300"/>
 </p>
+</a>
 
 <p align="center"> 
     <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
