@@ -4,10 +4,12 @@
     font-family: 'Roboto';
 }
 
+footer,
 .navbar nav {
-    height: 4rem;
+    height: 3.5rem;
 }
 
+footer,
 .navbar nav {
     display: flex;
     flex-direction: column;
@@ -20,6 +22,13 @@
     justify-content: space-evenly;
 }
 
+.navbar nav ul li a{
+    font-size: 1.5rem;
+    color: black;
+}
+.navbar nav ul li a:hover{
+    color: chocolate;
+}
 a {
     text-decoration: none;
 }
@@ -28,7 +37,18 @@ li {
     list-style: none;
 }
 
-.titulo {
+
+h1{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
+}
+
+footer {
+    background-color: #c2c2c2;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
 }
