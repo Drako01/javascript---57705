@@ -1,5 +1,5 @@
 const cabecera = document.getElementById('header');
-const navegacion = document.createElement('div'); // Cambiado de 'navbar' a 'div'
+const navegacion = document.createElement('div'); 
 const nav = document.createElement('nav');
 const ul = document.createElement('ul');
 cabecera.appendChild(navegacion);
