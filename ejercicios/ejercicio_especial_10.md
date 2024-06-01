@@ -33,7 +33,7 @@ Implementar la funcionalidad para los botones de control que permita cambiar la 
 <p align="center"> 
     <a href="https://drako01.github.io/carrousel-js/">Ejemplo de como debería quedar
 
- <img src="../img/muestra.png" alt="CoderHouse"  height="300"/>
+ <img src="muestra.png" alt="CoderHouse"  height="300"/>
 </p>
 </a>
 
