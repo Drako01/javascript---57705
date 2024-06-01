@@ -69,6 +69,4 @@
 
 ---
 
-## Profesor: Alejandro Daniel Di Stefano
-
-¡Hola! :octocat:
+## Profesor: Alejandro Daniel Di Stefano :octocat:
