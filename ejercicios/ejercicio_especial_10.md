@@ -24,12 +24,20 @@ Utilizar JavaScript para generar dinámicamente los elementos `<li>` con las im�
 
 Implementar la funcionalidad para los botones de control que permita cambiar la imagen visible al hacer clic en "anterior" o "siguiente".
 
+**Encontrarás imágenes de Ejemplo aquí:**
+
+![alt text](image.png)
+
+---
+
 <p align="center"> 
     <a href="https://drako01.github.io/carrousel-js/">Ejemplo de como debería quedar
 
  <img src="../img/muestra.png" alt="CoderHouse"  height="300"/>
 </p>
 </a>
+
+---
 
 <p align="center"> 
     <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
