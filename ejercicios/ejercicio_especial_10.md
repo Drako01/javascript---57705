@@ -5,8 +5,44 @@ Desarrollar una galería de imágenes tipo "carousel" utilizando HTML, CSS y Jav
 ## Requisitos:
 **Estructura HTML:**
 
-Crear una estructura HTML básica que incluya un contenedor para la galería de imágenes.
-El contenedor de la galería debe tener una lista de imágenes (pueden ser representadas por elementos `<li>`).
+Partiendo de la siguiente estructura HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript | Comisión #57705</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h1>Inicio</h1>
+        <section id="gallery">
+            <ul class="slide"></ul>
+            <section class="botonera">
+                <button class="control icon-prev">Prev</button>
+                <button class="control icon-next">Next</button>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- Aca pongo los Script de JS -->
+    <script src="js/scrips.js"></script>
+    <script src="js/navegacion.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Scripts de JS  -->
+</body>
+
+</html>
+```
+
+El contenedor `.gallery` debe tener una lista de imágenes (pueden ser representadas por elementos `<li>`) usando como herramienta el manejo de `DOM` desde `JavasCript`.
 
 
 **Estilo CSS:**
