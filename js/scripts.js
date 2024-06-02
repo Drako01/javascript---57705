@@ -1,1 +1,0 @@
-const cuerpo = document.body;
