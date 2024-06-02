@@ -33,7 +33,6 @@ Partiendo de la siguiente estructura HTML:
     </main>
     <footer></footer>
     <!-- Aca pongo los Script de JS -->
-    <script src="js/scrips.js"></script>
     <script src="js/navegacion.js"></script>
     <script src="js/index.js"></script>
     <!-- Scripts de JS  -->
