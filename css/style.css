@@ -68,3 +68,28 @@ footer {
 footer p {
     text-align: center;
 }
+
+.mainContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainContact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    gap: 1rem;
+    padding: 2rem;
+}
+.mainContact form>*{
+    min-width: calc(100% - 1rem);
+    height: 2rem;
+    font-size: 1.1rem;
+}
+
+.mainContact > div > h4 {
+    padding: 2rem;
+    font-size: 2rem;
+    color: blue;
+}
