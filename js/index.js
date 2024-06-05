@@ -27,6 +27,7 @@ boton.style.fontSize = '1.2rem';
 // boton.onclick = () => {alert("Boton apretado por Opcion 2.!!")};
 boton.onclick = () => {
     cuerpo.classList.add('black');
+    alert("Boton apretado.!!");
 };
 
 
@@ -41,4 +42,27 @@ let input2  = document.getElementById("edad");
 //CODIGO JS
 input1.addEventListener('input', () => {
     console.log(input1.value)
+})
+
+let inicioH1 = document.getElementById('inicioH1');
+console.log(inicioH1.innerText)
+
+inicioH1.addEventListener('mouseover', () => {
+    inicioH1.style.color = 'blue';
+})
+
+inicioH1.addEventListener('mouseout', () => {
+    inicioH1.style.color = 'black';
+})
+
+
+
+boton.addEventListener('mouseover', () => {
+    boton.style.color = 'yellow';
+    boton.style.backgroundColor = 'blue';
+})
+
+boton.addEventListener('mouseout', () => {
+    boton.style.color = 'blue';
+    boton.style.backgroundColor = 'yellow';
 })
