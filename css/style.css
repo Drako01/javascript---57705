@@ -93,3 +93,14 @@ footer p {
     font-size: 2rem;
     color: blue;
 }
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}

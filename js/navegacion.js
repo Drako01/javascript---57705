@@ -38,3 +38,22 @@ cabecera.style.backgroundColor = '#c2c2c2';
 
 footer[0].appendChild(parrafoFooter);
 parrafoFooter.innerHTML = 'CoderHouse - ' + TIME + ' | Comisión #57705';
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonToggle = document.getElementById('toggle-button');
+
+    buttonToggle.addEventListener('click' , function() {
+        cuerpo.classList.toggle('dark-mode');
+        updateButtonText();
+    })
+
+    function updateButtonText() {
+        if(cuerpo.classList.contains('dark-mode')) {
+            buttonToggle.textContent = 'Cambiar a modo claro';
+        } else {
+            buttonToggle.textContent = 'Cambiar a modo oscuro';
+        }
+    }
+
+    updateButtonText();
+})

@@ -23,7 +23,7 @@ miFormulario.addEventListener("submit", validarFormulario);
 
 function validarFormulario(e) {
     e.preventDefault();
-    let formulario = e.target
+    let formulario = e.target;
     divContact.appendChild(textContact);
     textContact.innerHTML = `La Edad de ${formulario.children[1].value} es 
                                 de: ${formulario.children[3].value} años.`;
