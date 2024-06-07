@@ -32,18 +32,7 @@ for (const link of links) {
     li.innerHTML = `<a href="${link.toLowerCase()}.html" >${link}</a>`;
     ul.appendChild(li);
 }
-// for (const link of links) {
-//     const li = document.createElement('li');
-//     const lowerCaseLink = link.toLowerCase();
 
-//     if (lowerCaseLink === 'index') {
-//         li.innerHTML = `<a href="${lowerCaseLink}.html">${link}</a>`;
-//     } else {
-//         li.innerHTML = `<a href="./pages/${lowerCaseLink}.html">${link}</a>`;
-//     }
-
-//     ul.appendChild(li);
-// }
 
 cabecera.style.backgroundColor = '#c2c2c2';
 
