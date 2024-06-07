@@ -177,7 +177,7 @@ body.dark-mode {
     justify-content: center;
     overflow: hidden;
     padding: 2rem;
-    width: 1080px;
+    width: 840px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -190,8 +190,8 @@ body.dark-mode {
 }
 
 .slide li img {
-    width: 1080px;
-    height: 640px;
+    width: 840px;
+    height: 480px;
     border-radius: 1rem;
 }
 
