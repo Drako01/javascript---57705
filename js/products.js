@@ -129,7 +129,7 @@ function renderProducts() {
         const productDiv = document.createElement('div');
         productDiv.innerHTML = `
             <p>${product.name} - $${product.price}</p>
-            <button onclick="addToCart(${product.id}, 1)">Agregar al Carrito</button>
+            <button onclick="addToCart(${product.id}, 1)" class="button_grey">Agregar al Carrito</button>
         `;
         productList.appendChild(productDiv);
     });

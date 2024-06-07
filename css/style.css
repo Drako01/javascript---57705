@@ -54,7 +54,8 @@ li {
     list-style: none;
 }
 
-h1, h3 {
+h1,
+h3 {
     text-align: center;
     margin-top: 1.2rem;
 }
@@ -69,12 +70,13 @@ footer p {
     text-align: center;
 }
 
-.mainContact{
+.mainContact {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.mainContact form{
+
+.mainContact form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,13 +84,14 @@ footer p {
     gap: 1rem;
     padding: 2rem;
 }
-.mainContact form>*{
+
+.mainContact form>* {
     min-width: calc(100% - 1rem);
     height: 2rem;
     font-size: 1.1rem;
 }
 
-.mainContact > div > h4 {
+.mainContact>div>h4 {
     padding: 2rem;
     font-size: 2rem;
     color: blue;
@@ -103,4 +106,100 @@ body {
 body.dark-mode {
     background-color: black;
     color: white;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #c2c2c2;
+}
+
+#cart,
+#product-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#product-list>div {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2rem);
+}
+
+.cart_title{
+    background-color: #c2c2c2;
+    height: 1.5rem;
+}
+.button_grey{
+    background-color: #c2c2c2;
+    height: 2rem;
+    padding: .25rem;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin: .25rem;
+}
+.button_grey:hover{
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+}
+
+
+.botonera {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.botonera button {
+    background-color: chocolate;
+    width: 6rem;
+    border: none;
+    border-radius: .25rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.slide {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide li {
+    display: none;
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide li img {
+    width: 1080px;
+    height: 640px;
+    border-radius: 1rem;
+}
+
+.slide li.active {
+    display: block;
+}
+
+.control {
+    cursor: pointer;
+    padding: 10px;
 }

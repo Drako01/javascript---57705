@@ -28,10 +28,22 @@ liImagen.appendChild(ORIGEN);
 ul.appendChild(liImagen);
 
 for (const link of links) {
-    const li = document.createElement('li');
+    const li = document.createElement('li');    
     li.innerHTML = `<a href="${link.toLowerCase()}.html" >${link}</a>`;
     ul.appendChild(li);
 }
+// for (const link of links) {
+//     const li = document.createElement('li');
+//     const lowerCaseLink = link.toLowerCase();
+
+//     if (lowerCaseLink === 'index') {
+//         li.innerHTML = `<a href="${lowerCaseLink}.html">${link}</a>`;
+//     } else {
+//         li.innerHTML = `<a href="./pages/${lowerCaseLink}.html">${link}</a>`;
+//     }
+
+//     ul.appendChild(li);
+// }
 
 cabecera.style.backgroundColor = '#c2c2c2';
 
@@ -41,7 +53,7 @@ parrafoFooter.innerHTML = 'CoderHouse - ' + TIME + ' | Comisión #57705';
 
 document.addEventListener('DOMContentLoaded', function() {
     const buttonToggle = document.getElementById('toggle-button');
-
+    buttonToggle.className = 'button_grey';
     buttonToggle.addEventListener('click' , function() {
         cuerpo.classList.toggle('dark-mode');
         updateButtonText();

@@ -1,68 +1,49 @@
-const mainBody = document.querySelector('#main');
-const boton = document.createElement('button');
-boton.textContent = 'Click';
-boton.type = 'button';
-mainBody.appendChild(boton);
-boton.style.backgroundColor = 'yellow';
-boton.style.padding = '1rem';
-boton.style.width = '6rem';
-boton.style.margin = '2rem';
-boton.style.fontSize = '1.2rem';
+const galleryContainer = document.querySelector('.slide');
+const prev = document.querySelector('.control.icon-prev');
+const next = document.querySelector('.control.icon-next');
 
-// Asignar Evento
+const imagenes = ['001', '002', '003'];
+let currentIndex = 0;
 
-// boton.addEventListener('click', respuestaAlClick);
+// Función para generar los elementos de la galería
+function createGallery() {
+    imagenes.forEach((img, index) => {
+        const li = document.createElement('li');
+        const image = document.createElement('img');
+        image.src = `img/${img}.webp`;
+        image.alt = `img ${index + 1}`;
+        li.appendChild(image);
+        if (index === 0) {
+            li.classList.add('active');
+        }
+        galleryContainer.appendChild(li);
+    });
+}
 
-// function respuestaAlClick() {
-//     boton.style.backgroundColor = 'blue';
-//     boton.style.color = 'white';
-// }
+// Función para mostrar la imagen en el índice especificado
+function showImage(index) {
+    const galleryItems = document.querySelectorAll('.slide li');
+    galleryItems.forEach((li, i) => {
+        li.classList.toggle('active', i === index);
+    });
+}
 
-// boton.addEventListener('click', () => {
-//     // boton.style.backgroundColor = 'blue';
-//     // boton.style.color = 'white';
-//     alert("Boton apretado.!!");
-// })
+// Función para mostrar la siguiente imagen
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % imagenes.length;
+    showImage(currentIndex);
+}
 
-// boton.onclick = () => {alert("Boton apretado por Opcion 2.!!")};
-boton.onclick = () => {
-    cuerpo.classList.add('black');
-    alert("Boton apretado.!!");
-};
+// Función para mostrar la imagen anterior
+function showPrevImage() {
+    currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
+    showImage(currentIndex);
+}
 
+// Añadir eventos a los botones
+next.addEventListener('click', showNextImage);
+prev.addEventListener('click', showPrevImage);
 
-//CODIGO JS
-let input1  = document.getElementById("nombre");
-let input2  = document.getElementById("edad");
-// input1.onchange = () => {console.log(input1.value)};
-// input2.onchange = () => {console.log(input2.value)};
-
-
-
-//CODIGO JS
-input1.addEventListener('input', () => {
-    console.log(input1.value)
-})
-
-let inicioH1 = document.getElementById('inicioH1');
-console.log(inicioH1.innerText)
-
-inicioH1.addEventListener('mouseover', () => {
-    inicioH1.style.color = 'blue';
-})
-
-inicioH1.addEventListener('mouseout', () => {
-    inicioH1.style.color = 'black';
-})
-
-
-
-boton.addEventListener('mouseover', () => {
-    boton.style.color = 'yellow';
-    boton.style.backgroundColor = 'blue';
-})
-
-boton.addEventListener('mouseout', () => {
-    boton.style.color = 'blue';
-    boton.style.backgroundColor = 'yellow';
-})
+// Inicializar la galería
+createGallery();
+showImage(currentIndex);
