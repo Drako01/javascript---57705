@@ -141,24 +141,24 @@
 
 
 // Desestructuración en parámetros
-const usuario1 = {
-    id: 1,
-    nombre: "Benicio",
-    edad: 20,
-    cursos: {
-        desarrolloWeb: "Aprobado",
-        javascript: "En Curso"
-    }
-}
-const usuario2 = {
-    id: 2,
-    nombre: "Ignacio",
-    edad: 33,
-    cursos: {
-        desarrolloWeb: "Aprobado",
-        javascript: "En Curso"
-    }
-}
+// const usuario1 = {
+//     id: 1,
+//     nombre: "Benicio",
+//     edad: 20,
+//     cursos: {
+//         desarrolloWeb: "Aprobado",
+//         javascript: "En Curso"
+//     }
+// }
+// const usuario2 = {
+//     id: 2,
+//     nombre: "Ignacio",
+//     edad: 33,
+//     cursos: {
+//         desarrolloWeb: "Aprobado",
+//         javascript: "En Curso"
+//     }
+// }
 
 // Recibe por parametro un Objeto a desestructurar
 // const desectructurarObjetos = (objeto) => {
@@ -178,7 +178,7 @@ const usuario2 = {
 
 //Desestructuración de arrays
 
-const nombresDePersonas = ["Alejandro", "Benicio", "Rodrigo", "Damian", "Johan", "Valentin"];
+// const nombresDePersonas = ["Alejandro", "Benicio", "Rodrigo", "Damian", "Johan", "Valentin"];
 // console.log(nombresDePersonas[0]);
 // console.log(nombresDePersonas[1]);
 // console.log(nombresDePersonas[2]);
@@ -195,6 +195,6 @@ const nombresDePersonas = ["Alejandro", "Benicio", "Rodrigo", "Damian", "Johan",
 // console.log(e);
 // console.log(f);
 
-const [ ,,,, a, b] = nombresDePersonas;
-console.log(a);
-console.log(b);
+// const [ ,,,, a, b] = nombresDePersonas;
+// console.log(a);
+// console.log(b);
