@@ -1,4 +1,4 @@
-// Delaración de Variables
+// Delaración de Variables Globales
 const cuerpo = document.body;
 const cabecera = document.getElementById('header');
 const navegacion = document.createElement('div'); 
