@@ -203,3 +203,8 @@ body.dark-mode {
     cursor: pointer;
     padding: 10px;
 }
+
+#error_carrito{
+    text-align: center;
+    padding-bottom: 2rem;
+}
