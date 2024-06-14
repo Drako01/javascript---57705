@@ -10,13 +10,13 @@ const products = [
 let cart = loadCartFromLocalStorage();
 const errorCarritoDiv = document.getElementById('error_carrito');
 errorCarritoDiv.style.color = 'red';
-function mandarMjeDeError(){
-    errorCarritoDiv.innerHTML = `<p>Producto no encontrado</p>`;    
+function mandarMjeDeError(productId){
+    errorCarritoDiv.innerHTML = `<p>Producto con ID: ${productId} no encontrado</p>`;    
 }
 function addToCart(productId, quantity) {
     const product = products.find(p => p.id === productId);
     if (!product) {
-        mandarMjeDeError()
+        mandarMjeDeError(productId)
         return;
     }
 
@@ -77,3 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     renderCart();
 });
+
+function testError() {
+    addToCart(999, 1); // El Producto con id 999 no existe, por eso lo testeo
+}
+testError();
