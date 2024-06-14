@@ -135,11 +135,12 @@ body.dark-mode {
     width: calc(100% - 2rem);
 }
 
-.cart_title{
+.cart_title {
     background-color: #c2c2c2;
     height: 1.5rem;
 }
-.button_grey{
+
+.button_grey {
     background-color: #c2c2c2;
     height: 2rem;
     padding: .25rem;
@@ -148,7 +149,8 @@ body.dark-mode {
     cursor: pointer;
     margin: .25rem;
 }
-.button_grey:hover{
+
+.button_grey:hover {
     background-color: #fff;
     border: 1px solid #c2c2c2;
 }
@@ -204,7 +206,17 @@ body.dark-mode {
     padding: 10px;
 }
 
-#error_carrito{
-    text-align: center;
+#error_carrito {
     padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#error_carrito p {
+    width: 600px;
+    background-color: #c2c2c2;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
 }
