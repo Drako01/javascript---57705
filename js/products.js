@@ -76,9 +76,6 @@ function loadCartFromLocalStorage() {
 document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     renderCart();
+    // addToCart(999, 1);
 });
 
-function testError() {
-    addToCart(999, 1); // El Producto con id 999 no existe, por eso lo testeo
-}
-testError();
