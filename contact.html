@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Javascript | Comisión #57705</title>
 </head>
@@ -21,12 +22,19 @@
             <input type="number" id="edadForm">
             <input type="submit" value="Enviar" class="button_grey">
         </form>
+        <div data-aos="fade-up">
+            <img src="/img/logo.png" alt="">
+        </div>
     </main>
     <footer></footer>
     <!-- Aca pongo los Script de JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/global.js"></script>
     <script src="js/navegacion.js"></script>
     <script src="js/contact.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Scripts de JS  -->
 </body>
 
