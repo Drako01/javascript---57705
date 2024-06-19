@@ -223,8 +223,8 @@ body.dark-mode {
 
 /* .swal2-styled{
     background-color: #c2c2c2 !important;
-    width: 6rem !important;
-} */
+    width: 6rem ;
+}
 
 .swal2-timer-progress-bar {
     height: 1rem !important;
@@ -235,4 +235,4 @@ body.dark-mode {
 .swiper {
     width: 600px;
     height: 300px;
-}
+} */
