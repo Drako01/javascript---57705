@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonToggle.addEventListener('click' , function() {
         cuerpo.classList.toggle('dark-mode');
         updateButtonText();
+        setTimeout(()=>{
+            cuerpo.classList.remove('dark-mode');
+        },2000);
     })
 
     function updateButtonText() {
