@@ -183,3 +183,38 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
 - **Encadenamiento**: Permite manejar múltiples operaciones asincrónicas en secuencia.
 
 Las promesas hacen que el código asincrónico sea más legible y manejable, evitando el "callback hell" y proporcionando una forma más limpia de manejar las operaciones asincrónicas.
+
+### 1. **Call Stack (Pila de llamadas)**
+Imagina una pila de platos. Cada vez que una función se llama, se coloca un "plato" (que representa la función) en la parte superior de la pila. Cuando una función termina, se quita el "plato" de la parte superior. El call stack funciona de manera similar:
+
+- Se llama a la función A.
+- La función A llama a la función B.
+- La función B llama a la función C.
+- Cuando C termina, se quita de la pila y se sigue con B.
+- Cuando B termina, se quita de la pila y se sigue con A.
+- Cuando A termina, se vacía la pila.
+
+### 2. **Event Loop (Bucle de eventos)**
+El event loop es como un vigilante que revisa constantemente el call stack y la queue (cola). Su tarea es asegurarse de que el call stack esté vacío y, cuando lo esté, tomar la siguiente tarea de la queue y ponerla en el call stack para que se ejecute.
+
+### 3. **Queue (Cola)**
+La queue es como una lista de tareas pendientes que esperan ser ejecutadas. Estas tareas se colocan en la queue cuando ocurren ciertos eventos, como una llamada a una API que toma tiempo en responder, o un temporizador (setTimeout).
+
+### 4. **Asincronía**
+La asincronía permite que el código siga ejecutándose sin tener que esperar a que ciertas operaciones terminen. Por ejemplo, cuando haces una llamada a una API, en lugar de esperar la respuesta (y detener todo mientras esperas), la operación se ejecuta en segundo plano y cuando termina, se coloca una tarea en la queue para que el event loop la procese cuando el call stack esté vacío.
+
+### Ejemplo:
+Imagina que estás en una cocina (el call stack), y estás cocinando (ejecutando funciones). Tienes una lista de tareas (queue) que necesitas hacer, como hervir agua o cortar verduras.
+
+1. Empiezas a cocinar (call stack tiene las funciones).
+2. Pones una olla de agua a hervir (una tarea asincrónica). Mientras hierve, sigues cocinando otras cosas.
+3. La tarea de hervir agua va a la queue.
+4. El event loop revisa si terminaste con las otras tareas (si el call stack está vacío).
+5. Cuando terminas, el event loop toma la tarea de la queue (agua hervida) y la coloca en el call stack para que la proceses.
+
+De esta manera, la asincronía permite que sigas trabajando (ejecutando código) sin detenerte a esperar por tareas que toman tiempo.
+
+
+---
+
+## [Autor: Alejandro Di Stefano](https://github.com/Drako01)
