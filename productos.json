@@ -1,0 +1,106 @@
+[
+    {
+        "id_producto": 1,
+        "nombre": "Fideos",
+        "descripcion": "Fideos de Sémola",
+        "precio": 1050.5,
+        "imagen": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2540661_f.jpg",
+        "stock": 100,
+        "categoria": {
+            "id_categoria": 1,
+            "nombre": "Pastas",
+            "descripcion": "Productos de pasta alimenticia"
+        }
+    },
+    {
+        "id_producto": 2,
+        "nombre": "Arroz",
+        "descripcion": "Arroz Blanco",
+        "precio": 850.0,
+        "imagen": "https://media.f2h.shop/media/catalog/product/cache/ab45d104292f1bb63d093e6be8310c97/a/r/arroz.png",
+        "stock": 150,
+        "categoria": {
+            "id_categoria": 2,
+            "nombre": "Cereales",
+            "descripcion": "Productos derivados de granos"
+        }
+    },
+    {
+        "id_producto": 3,
+        "nombre": "Leche",
+        "descripcion": "Lecclientelevelhe Entera",
+        "precio": 650.0,
+        "imagen": "https://acdn.mitiendanube.com/stores/093/780/products/serenisima-clasica-751-95fea92d1a27f8e9ab15710914346750-480-0.png",
+        "stock": 200,
+        "categoria": {
+            "id_categoria": 3,
+            "nombre": "Lácteos",
+            "descripcion": "Productos lácteos"
+        }
+    },
+    {
+        "id_producto": 4,
+        "nombre": "Pan",
+        "descripcion": "Pan Blanco",
+        "precio": 0.0,
+        "imagen": "https://laroussecocina.mx/wp-content/uploads/2023/01/Pan-viene%E2%95%A0us-de-chipotle.jpg.webp",
+        "stock": 80,
+        "categoria": {
+            "id_categoria": 1,
+            "nombre": "Pastas",
+            "descripcion": "Productos de pasta alimenticia"
+        }
+    },
+    {
+        "id_producto": 5,
+        "nombre": "Huevos",
+        "descripcion": "Docena de Huevos",
+        "precio": 1500.0,
+        "imagen": "https://www.res.com.ar/media/catalog/product/cache/6c63de560a15562fe08de38c3c766637/h/u/huevos_blancos.jpg",
+        "stock": 50,
+        "categoria": {
+            "id_categoria": 5,
+            "nombre": "Huevos",
+            "descripcion": "Productos derivados de huevos"
+        }
+    },
+    {
+        "id_producto": 6,
+        "nombre": "Azúcar",
+        "descripcion": "Azúcar Blanca",
+        "precio": 950.0,
+        "imagen": "https://alberdisa.vteximg.com.br/arquivos/ids/174707-1000-1000/Azucar-Ledesma-x-1-Kg.png?v=638187109975370000",
+        "stock": 120,
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Azúcar",
+            "descripcion": "Productos derivados de azúcar"
+        }
+    },
+    {
+        "id_producto": 7,
+        "nombre": "Aceite",
+        "descripcion": "Aceite de Oliva",
+        "precio": 1800.0,
+        "imagen": "https://www.cocinista.es/download/bancorecursos/ingredientes/ingrediente-aceite-oliva-2.jpg",
+        "stock": 90,
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Aceites",
+            "descripcion": "Productos de aceites"
+        }
+    },
+    {
+        "id_producto": 8,
+        "nombre": "Harina",
+        "descripcion": "Harina 0000",
+        "precio": 750.0,
+        "imagen": "https://acdn.mitiendanube.com/stores/001/267/442/products/7792180139313_02-photoroom1-c91ec989b6b8ea789216894436656599-1024-1024.png",
+        "stock": 180,
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Harinas",
+            "descripcion": "Productos derivados de harina"
+        }
+    }
+]
