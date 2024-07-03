@@ -1,0 +1,25 @@
+{
+  "name": "javascript---57705",
+  "version": "3.0.1",
+  "description": "Proyecto de la comision de Alumnos de JS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass styles_boostrap.scss styles_boostrap.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drako01/javascript---57705.git"
+  },
+  "author": "Alejandro Di Stefano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Drako01/javascript---57705/issues"
+  },
+  "homepage": "https://github.com/Drako01/javascript---57705#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express": "^4.19.2",
+    "sass": "^1.77.6"
+  }
+}
